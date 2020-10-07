@@ -17,6 +17,7 @@ Stream the rows into BigQuery
 Create a Cloud Function in the roimck-neptune project, subscribed to the moonbank-neptune activities pub/sub topic  
   Messages from the roimck-neptune activites pub/sub topic are sent 1 to 3 times per minute  
   NOTE: Due to a limitation in cloud functions, the cloud function and the pub/sub topic must be in the same project. Please use the roimck-neptune project to create your function. 
+  
 Parse the message and write into a new table in your Neptune Dataset  
   SCHEMA: id:string,ipaddress:string,action:string,accountnumber:string,actionid:integer,name:string,actionby:string    
   Example: 20200812040801981475,195.174.170.81,UPDATE,GB25BZMX47593824219489,4,Emily Blair,STAFF  
