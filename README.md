@@ -14,9 +14,9 @@ Create a new table in the neptune dataset with a matching schema
 Stream the rows into BigQuery  
 
 ## Additional Goals:  
-Create a Cloud Function in the roimck-neptune project, subscribed to the moonbank-neptune activities pub/sub topic  
+Create a Cloud Function in the roimck-neptune project, subscribed to the roimck-neptune activities pub/sub topic  
   Messages from the roimck-neptune activites pub/sub topic are sent 1 to 3 times per minute  
-  NOTE: Due to a limitation in cloud functions, the cloud function and the pub/sub topic must be in the same project. Please use the roimck-neptune project to create your function. 
+  NOTE: Due to a limitation in cloud functions, the cloud function and the pub/sub topic must be in the same project. Please use the roimck-neptune project to create your function. However, grant the service account permissions to YOUR project's BigQuery - and it can update the BigQuery Dataset/Table(s) in your project
   
 Parse the message and write into a new table in your Neptune Dataset  
   SCHEMA: id:string,ipaddress:string,action:string,accountnumber:string,actionid:integer,name:string,actionby:string    
