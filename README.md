@@ -24,11 +24,12 @@ Parse the message and write into a new table in your Neptune Dataset
 
 Build a Data Studio Dashboard that reports on Database Activities    
 
-The DataEngineers@roimck.com group has the following IAM permissions to the mck-neptune project  
+The DataEngineers@roimck.com group has the following IAM permissions to the roimck-neptune project  
+  Viewer
   Cloud Functions Admin  
   Pub/Sub Subscriber  
   Create Service Accounts  
 
 To deploy your cloud function - use a custom service account
-  Create a Service Account to run your Cloud Function in the moonbank-neptune project  
-  Grant the Service Account BigQuery Data Editor to the dataset in your Project  
+  Create a Service Account to run your Cloud Function in the roimck-neptune project  
+  Grant the Service Account BigQuery Data Editor to the dataset in YOUR Project  
