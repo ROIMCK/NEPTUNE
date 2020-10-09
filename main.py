@@ -2,6 +2,8 @@
 # Assumes a dataset called neptune exists
 # Assumes a table call rawmessages
 # rawmessages schema - single column:  message:string
+# Deploy as a Cloud Function using Python3.7 Runtime
+# When deploying the cloud function - be sure to change enty point to the function name - pubsub_to_bigquery
 
 import base64
 from google.cloud import bigquery
